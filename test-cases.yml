@@ -271,3 +271,107 @@ module.exports = solution;
     - Выбрать никнейм человека, с которым мы ранее переписывались
   expected-result: |
     Нас переносит в персональный чат с определённым пользователем
+
+- summary: |
+    Вызов нас на игру с принятием 
+  requirement: |
+    Получение вызова на игру с участником
+  prerequisites:
+    Открыта вкладка Lobby
+  test-data: |
+    Нет данных
+  steps:
+    - Нажать на кнопку Invites
+    - Нажать на кнопку Accept
+  expected-result: |
+    Нас переносит в игру с пользователем, вызвавшим нас
+
+- summary: |
+    Вызов нас на игру с отклонением 
+  requirement: |
+    Получение вызова на игру с участником
+  prerequisites:
+    Открыта вкладка Lobby |
+    Нас позвал пользователь сайта на игру
+  test-data: |
+    Нет данных
+  steps:
+    - Нажать на кнопку Invites
+    - Нажать на кнопку Decline
+  expected-result: |
+    Нас не переносит в игру с пользователем, вызвавшим нас, мы остаёмся в лобби
+
+- summary: |
+    Вызов других участников на игру отклонено
+  requirement: |
+    Отправка вызова на игру других пользователей 
+  prerequisites:
+    Открыта вкладка Lobby
+  test-data: |
+    Level = "1 звезда" Game Type = "With a friend" Time control = "8 min" Choose opponent = "noobicoder" Choose task by name or tags = "Random task" Tags = "math"
+  steps:
+    - Нажать на ник игрока
+    - Выбрать в выпадающем меню "Send an Invite"
+    - В модальном окне выбрать Level, Game Type, Time control, Choose opponent, Choose task by name or tags, Tags
+    - Нажать на кнопку "Create invite"
+  expected-result: |
+    Нас не переносит в игру с пользователем, которого мы вызвали, мы остаёмся в лобби
+
+- summary: |
+    Вызов других участников на игру принято
+  requirement: |
+    Отправка вызова на игру других пользователей 
+  prerequisites:
+    Открыта вкладка Lobby
+  test-data: |
+    Level = "1 звезда" Game Type = "With a friend" Time control = "8 min" Choose opponent = "noobicoder" Choose task by name or tags = "Random task" Tags = "math"
+  steps:
+    - Нажать на ник игрока
+    - Выбрать в выпадающем меню "Send an Invite"
+    - В модальном окне выбрать Level, Game Type, Time control, Choose opponent, Choose task by name or tags, Tags
+    - Нажать на кнопку "Create invite"
+  expected-result: |
+    Нас переносит в игру с пользователем, которого мы вызвали
+
+- summary: |
+    Переход в профиль других пользователей
+  requirement: |
+    При нажатии на ник пользователя мы можем перейти на его страницу и узнать его данные 
+  prerequisites:
+    Открыта вкладка Lobby
+  test-data: |
+    Нет данных
+  steps:
+    - Нажать на ник игрока
+    - Выбрать в выпадающем меню "Info"
+  expected-result: |
+    Нас переносит на страницу пользователя, которого мы хотели изучить
+
+- summary: |
+    Переход в лобби
+  requirement: |
+    При нажатии на "Codebattle" в верхней панели нас перенесёт в лобби
+  prerequisites:
+    Открыт профиль пользователя
+  test-data: |
+    Кнопка = "Codebattle"
+  steps:
+    - Нажать на кнопку в верхней панели 
+  expected-result: |
+    Нас переносит на страницу пользователя, которого мы хотели изучить
+
+- summary: |
+    Выход из профиля
+  requirement: |
+    При нажатии на "Sign out" в выпадающем меню мы выходим из профиля
+  prerequisites:
+    Открыто фото лобби
+  test-data: |
+    Кнопка = Никнейм "k_0"
+  steps:
+    - Нажать на кнопку в верхней панели 
+    - В выпадающем меню выбрать кнопку "Sign out"
+  expected-result: |
+    Нас переносит на страницу для не зарегестрированных пользователей
+
+    
