@@ -1,100 +1,100 @@
 ---
 - summary: |
   Проверка некорректной регистрации пользователя
-  status: pass
+status: pass
 
 - summary: |
   Проверка корректной регистрации пользователя 
-  status: pass
+status: pass
 
 - summary: |
   Проверка регистрации зарегистрированного пользователя пользователя
-  status: pass
+status: pass
 
 - summary: |
   Проверка входа пользователя
-  status: pass
+status: pass
 
 - summary: |
   Пробная версия игры
-  status: pass
+status: pass
 
 - summary: |
   Создание игры 
-  status: pass
+status: pass
 
 - summary: |
   Победа в игре 
-  status: pass
+status: pass
 
 - summary: |
   Поражение в игре 
-  status: pass
+status: pass
 
 - summary: |
   Нет победителя в игре
-  status: pass
+status: pass
 
 - summary: |
   Сдача в игре 
-  status: pass
+status: pass
 
 - summary: |
   Просмотр рейтинга 
-  status: pass
+status: pass
 
 - summary: |
   Найти человека 
-  status: pass
+status: pass
 
 - summary: |
   Просмотр записи проведённых игр 
-  status: pass
+status: pass
 
 - summary: |
   Сыграть в игру с теми же настройками, как играл человек до нас
-  status: pass
+status: pass
 
 - summary: |
   Отправление сообщения в общий чат
-  status: pass
+status: pass
 
 - summary: |
   Отправление сообщения определённому пользователю
-  status: pass
+status: pass
 
 - summary: |
   Переключение чата
-  status: pass
+status: pass
 
 - summary: |
   Вызов нас на игру с принятием
-  status: pass
+status: pass
 
 - summary: |
   Вызов нас на игру с отклонением 
-  status: pass
+status: pass
 
 - summary: |
   Вызов других участников на игру отклонено
-  status: pass
+status: pass
 
 - summary: |
   Вызов других участников на игру принято
-  status: pass
+status: pass
 
 - summary: |
   Переход в профиль других пользователей
-  status: pass
+status: pass
 
 - summary: |
   Переход в лобби
-  status: pass
+status: pass
 
 - summary: |
   Выход из профиля
-  status: pass
+status: pass
 
 - summary: |
   Вход в профиль с помощью GitHub
-  status: pass
+status: pass
