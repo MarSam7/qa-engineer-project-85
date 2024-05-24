@@ -98,11 +98,3 @@
 - summary: |
   Вход в профиль с помощью GitHub
   status: pass
-
-- summary: |
-  Адаптивность приложения
-  status: pass
-
-- summary: |
-  Данные передаются на сервер
-  status: pass
