@@ -125,7 +125,7 @@
     return width * length;
     };
 
-module.exports = solution;"
+    module.exports = solution;"
   steps:
     - Вписываем решение в место для записи кода
   expected-result: |
